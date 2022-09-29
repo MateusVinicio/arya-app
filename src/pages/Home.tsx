@@ -25,7 +25,7 @@ export default function Home({ navigation }: HomeProps) {
 
       <Button title="Dashboard" onPress={handleDashboard} />
       <Button title="Inventário" onPress={handleInventary} />
-      <Button title="Usuário" onPress={handleUser} />
+      <Button title="Usuários" onPress={handleUser} />
     </View>
   );
 }
