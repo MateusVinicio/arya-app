@@ -1,14 +1,21 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import React from "react";
 
-interface UserProps {
-  route: any;
-}
+import data from "../../services/userData.json";
 
-export default function User({ route }: UserProps) {
+export default function User() {
   return (
     <View style={styles.container}>
-      <Text>User</Text>
+      <FlatList
+        data={data.data}
+        renderItem={({ item }) => (
+          <View style={styles.itemContainer}>
+            <Text>{item.id}</Text>
+            <Text>{item.name}</Text>
+            <Text>{item.permission}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 }
@@ -19,5 +26,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  itemContainer: {
+    marginTop: 16,
   },
 });

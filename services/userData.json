@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "account_manager": "Raine",
+      "cpf": "3557671194621552",
+      "email": "rrosenblad0@huffingtonpost.com",
+      "is_manager": 1,
+      "name": "Kanlam",
+      "permission": "Cliente",
+      "rg": "6759064291127673252",
+      "trading_name": "Sonsing"
+    },
+    {
+      "id": 2,
+      "account_manager": "Nelly",
+      "cpf": "30219431972405",
+      "email": "nmacharg1@ucoz.ru",
+      "is_manager": 1,
+      "name": "Matsoft",
+      "permission": "Cliente",
+      "rg": "201535603811466",
+      "trading_name": "Home Ing"
+    },
+    {
+      "id": 3,
+      "account_manager": "Lynnea",
+      "cpf": "3544012931451571",
+      "email": "llalevee2@ameblo.jp",
+      "is_manager": 1,
+      "name": "Duobam",
+      "permission": "Cliente",
+      "rg": "3574701314116834",
+      "trading_name": "Sub-Ex"
+    },
+    {
+      "id": 4,
+      "account_manager": "Ed",
+      "cpf": "4903283478511798933",
+      "email": "emiddlemiss3@imdb.com",
+      "is_manager": 0,
+      "name": "Ventosanzap",
+      "permission": "Cliente",
+      "rg": "67633212426439571",
+      "trading_name": "Zathin"
+    },
+    {
+      "id": 5,
+      "account_manager": "Renault",
+      "cpf": "5007668601802651",
+      "email": "raspenlon4@skyrock.com",
+      "is_manager": 0,
+      "name": "Matsoft",
+      "permission": "Cliente",
+      "rg": "5602231580693239543",
+      "trading_name": "Viva"
+    },
+    {
+      "id": 6,
+      "account_manager": "Quint",
+      "cpf": "4913220109401986",
+      "email": "qspyby5@ucoz.ru",
+      "is_manager": 0,
+      "name": "Ventosanzap",
+      "permission": "Cliente",
+      "rg": "3556768539202196",
+      "trading_name": "Andalax"
+    },
+    {
+      "id": 7,
+      "account_manager": "Arlana",
+      "cpf": "5584539084985258",
+      "email": "atomasi6@hc360.com",
+      "is_manager": 1,
+      "name": "Opela",
+      "permission": "Cliente",
+      "rg": "3581773638253057",
+      "trading_name": "Overhold"
+    },
+    {
+      "id": 8,
+      "account_manager": "Marget",
+      "cpf": "372301623349893",
+      "email": "malelsandrovich7@wordpress.com",
+      "is_manager": 1,
+      "name": "Vagram",
+      "permission": "Cliente",
+      "rg": "4175006119430120",
+      "trading_name": "Viva"
+    },
+    {
+      "id": 9,
+      "account_manager": "Bob",
+      "cpf": "5179109386871878",
+      "email": "bapplegate8@last.fm",
+      "is_manager": 0,
+      "name": "Stringtough",
+      "permission": "Cliente",
+      "rg": "633418933161054537",
+      "trading_name": "Temp"
+    },
+    {
+      "id": 10,
+      "account_manager": "Gertrudis",
+      "cpf": "374622750555558",
+      "email": "gaviss9@gmpg.org",
+      "is_manager": 1,
+      "name": "Treeflex",
+      "permission": "Cliente",
+      "rg": "36848583225776",
+      "trading_name": "Aerified"
+    },
+    {
+      "id": 11,
+      "account_manager": "Barn",
+      "cpf": "4905580335353339",
+      "email": "bsorroa@eventbrite.com",
+      "is_manager": 0,
+      "name": "Ventosanzap",
+      "permission": "Cliente",
+      "rg": "3551558037842857",
+      "trading_name": "Tempsoft"
+    },
+    {
+      "id": 12,
+      "account_manager": "Casey",
+      "cpf": "30063794364820",
+      "email": "cwhiterodb@cbslocal.com",
+      "is_manager": 1,
+      "name": "Gembucket",
+      "permission": "Cliente",
+      "rg": "3529931271601173",
+      "trading_name": "Mat Lam Tam"
+    },
+    {
+      "id": 13,
+      "account_manager": "Sinclair",
+      "cpf": "3564305567003681",
+      "email": "sbyrec@aol.com",
+      "is_manager": 0,
+      "name": "Kanlam",
+      "permission": "Cliente",
+      "rg": "5048378663324476",
+      "trading_name": "Alphazap"
+    },
+    {
+      "id": 14,
+      "account_manager": "Heywood",
+      "cpf": "633456059548834665",
+      "email": "hmyland@utexas.edu",
+      "is_manager": 0,
+      "name": "Bigtax",
+      "permission": "Cliente",
+      "rg": "5108751908634809",
+      "trading_name": "Tres-Zap"
+    },
+    {
+      "id": 15,
+      "account_manager": "Hughie",
+      "cpf": "6304136499627854012",
+      "email": "hbalselliee@redcross.org",
+      "is_manager": 0,
+      "name": "Andalax",
+      "permission": "Cliente",
+      "rg": "6374171659206555",
+      "trading_name": "Bamity"
+    }
+  ]
+}
