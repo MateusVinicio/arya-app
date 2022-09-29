@@ -1,0 +1,107 @@
+{
+  "status": true,
+  "description": "",
+  "data": {
+    "total": "378369",
+    "connectionStatus": [
+      { "qtd": 89515, "conn_status": 0, "conn_status_str": "offline" },
+      { "qtd": 120452, "conn_status": 1, "conn_status_str": "online" },
+      { "qtd": 56988, "conn_status": 0, "conn_status_str": "nunca conectados" }
+    ],
+    "exceedingLines": "30228",
+    "sessionsHistory": {
+      "quantity": [
+        "109461",
+        "110384",
+        "110761",
+        "110639",
+        "110259",
+        "111003",
+        "112999",
+        "113278",
+        "111899",
+        "109746",
+        "108414",
+        "106722",
+        "104895",
+        "102903",
+        "101538",
+        "100833",
+        "100204",
+        "100109",
+        "101395",
+        "104979",
+        "108311",
+        "109722",
+        "109318",
+        "110657"
+      ],
+      "hours": [
+        "12:00:00",
+        "13:00:00",
+        "14:00:00",
+        "15:00:00",
+        "16:00:00",
+        "17:00:00",
+        "18:00:00",
+        "19:00:00",
+        "20:00:00",
+        "21:00:00",
+        "22:00:00",
+        "23:00:00",
+        "00:00:00",
+        "01:00:00",
+        "02:00:00",
+        "03:00:00",
+        "04:00:00",
+        "05:00:00",
+        "06:00:00",
+        "07:00:00",
+        "08:00:00",
+        "09:00:00",
+        "10:00:00",
+        "11:00:00"
+      ]
+    },
+    "lineSessionsByApn": [
+      {
+        "quantity": 4,
+        "conn_status": 0,
+        "apn": "",
+        "conn_status_str": "Offline"
+      },
+      {
+        "quantity": 13,
+        "conn_status": 0,
+        "apn": "conexao.teste",
+        "conn_status_str": "Offline"
+      },
+      {
+        "quantity": 38,
+        "conn_status": 1,
+        "apn": "conexao.teste1",
+        "conn_status_str": "Online"
+      },
+      {
+        "quantity": 5531,
+        "conn_status": 0,
+        "apn": "conexao.teste2",
+        "conn_status_str": "Offline"
+      },
+      {
+        "quantity": 13,
+        "conn_status": 1,
+        "apn": "conexao.online",
+        "conn_status_str": "Online"
+      }
+    ],
+    "simsByProvider": [
+      { "qtd": 127817, "id_provider": 1, "name": "VIVO" },
+      { "qtd": 31867, "id_provider": 2, "name": "CLARO" },
+      { "qtd": 79437, "id_provider": 3, "name": "TIM" }
+    ],
+    "poolData": { "consumption": "5371363.7917", "franchise": "17693648" },
+    "pendingSim": 20163,
+    "activeSim": 247091
+  }
+}
