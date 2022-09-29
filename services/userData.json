@@ -1,6 +1,11 @@
 {
   "data": [
     {
+      "trading_name": "NOME",
+      "email": "EMAIL",
+      "permission": "PERMISSÃO"
+    },
+    {
       "id": 1,
       "account_manager": "Raine",
       "cpf": "3557671194621552",
