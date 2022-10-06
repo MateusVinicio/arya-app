@@ -1,13 +1,6 @@
 {
   "data": [
     {
-      "trading_name": "CLIENTE",
-      "iccid": "ICCID",
-      "msisdn": "NÚMERO",
-      "provider": "OPERADORA",
-      "order_id": "PEDIDO"
-    },
-    {
       "trading_name": "Voltsillam",
       "iccid": "502056968691",
       "msisdn": "5542123456789",

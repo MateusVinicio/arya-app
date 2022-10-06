@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Inventary from "./pages/Inventary";
 import User from "./pages/User";
 import Home from "./pages/Home";
+import Test from "./pages/Test";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ export enum ScreenNames {
   Dashboard = "Dashboard",
   Inventary = "Inventário",
   User = "Usuários",
+  Test = "Test",
 }
 
 ScreenNames.Home;
@@ -71,6 +73,21 @@ export default function Router() {
           component={User}
           options={{
             title: `AryaApp - ${ScreenNames.User}`,
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#1e2022",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ScreenNames.Test}
+          component={Test}
+          options={{
+            title: `AryaApp - ${ScreenNames.Test}`,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
