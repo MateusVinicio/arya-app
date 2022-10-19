@@ -19,17 +19,15 @@ export enum ScreenNames {
   Login = "Login",
 }
 
-ScreenNames.Home;
-
 export default function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name={ScreenNames.Home}
-          component={Home}
+          name={ScreenNames.Login}
+          component={Login}
           options={{
-            title: ScreenNames.Home,
+            title: ScreenNames.Login,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
@@ -41,10 +39,10 @@ export default function Router() {
           }}
         />
         <Stack.Screen
-          name={ScreenNames.Login}
-          component={Login}
+          name={ScreenNames.Home}
+          component={Home}
           options={{
-            title: ScreenNames.Login,
+            title: ScreenNames.Home,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",

@@ -6,10 +6,38 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useState } from "react";
+import { ScreenNames } from "../Router";
+import api from "../services/api";
 
-export default function Login() {
+interface LoginProps {
+  navigation: any;
+}
+
+export default function Login({ navigation }: LoginProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleHome = () => {
+    navigation.navigate(ScreenNames.Home);
+  };
+
+  const loginPost = () => {
+    setError("");
+    api
+      .post("auth", {
+        email: email,
+        password: password,
+      })
+      .then(({ data }) => {
+        if (data.status) return handleHome();
+        return setError("Ops, algo errado aconteceu");
+      })
+      .catch(({ response }) => {
+        setError(response.data.message);
+      });
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.cardLogin}>
@@ -28,7 +56,10 @@ export default function Login() {
           placeholder="Digite sua senha"
           secureTextEntry={true}
         />
-        <TouchableOpacity style={styles.button}>
+
+        <Text style={styles.errorLogin}>{error}</Text>
+
+        <TouchableOpacity style={styles.button} onPress={loginPost}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
       </View>
@@ -63,7 +94,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#3e83a1",
     padding: 10,
-    marginTop: 50,
+    marginTop: 30,
     width: 200,
   },
   loginText: {
@@ -75,5 +106,9 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "700",
     marginTop: 20,
+  },
+  errorLogin: {
+    marginTop: 10,
+    color: "red",
   },
 });
