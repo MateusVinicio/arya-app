@@ -6,6 +6,7 @@ import Inventary from "./pages/Inventary";
 import User from "./pages/User";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
+import Login from "./pages/Login";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ export enum ScreenNames {
   Inventary = "Inventário",
   User = "Usuários",
   Test = "Test",
+  Login = "Login",
 }
 
 ScreenNames.Home;
@@ -27,7 +29,22 @@ export default function Router() {
           name={ScreenNames.Home}
           component={Home}
           options={{
-            title: `AryaApp - ${ScreenNames.Home}`,
+            title: ScreenNames.Home,
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#1e2022",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
+          name={ScreenNames.Login}
+          component={Login}
+          options={{
+            title: ScreenNames.Login,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
@@ -42,7 +59,7 @@ export default function Router() {
           name={ScreenNames.Dashboard}
           component={Dashboard}
           options={{
-            title: `AryaApp - ${ScreenNames.Dashboard}`,
+            title: ScreenNames.Dashboard,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
@@ -57,7 +74,7 @@ export default function Router() {
           name={ScreenNames.Inventary}
           component={Inventary}
           options={{
-            title: `AryaApp - ${ScreenNames.Inventary}`,
+            title: ScreenNames.Inventary,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
@@ -72,7 +89,7 @@ export default function Router() {
           name={ScreenNames.User}
           component={User}
           options={{
-            title: `AryaApp - ${ScreenNames.User}`,
+            title: ScreenNames.User,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",
@@ -87,7 +104,7 @@ export default function Router() {
           name={ScreenNames.Test}
           component={Test}
           options={{
-            title: `AryaApp - ${ScreenNames.Test}`,
+            title: ScreenNames.Test,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",

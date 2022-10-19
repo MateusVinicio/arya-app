@@ -23,10 +23,15 @@ export default function Home({ navigation }: HomeProps) {
     navigation.navigate(ScreenNames.Test);
   };
 
+  const handleLogin = () => {
+    navigation.navigate(ScreenNames.Login);
+  };
+
   return (
     <View style={styles.container}>
       <Text>Home</Text>
 
+      <Button title="Login" onPress={handleLogin} />
       <Button title="Dashboard" onPress={handleDashboard} />
       <Button title="Inventário" onPress={handleInventary} />
       <Button title="Usuários" onPress={handleUser} />
