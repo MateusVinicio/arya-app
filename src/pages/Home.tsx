@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import React from "react";
-import { ScreenNames } from "../Router";
+import { ScreenNames } from "../services/screenNames";
 
 interface HomeProps {
   navigation: any;

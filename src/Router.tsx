@@ -7,17 +7,9 @@ import User from "./pages/User";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
 import Login from "./pages/Login";
+import { ScreenNames } from "./services/screenNames";
 
 const Stack = createNativeStackNavigator();
-
-export enum ScreenNames {
-  Home = "Home",
-  Dashboard = "Dashboard",
-  Inventary = "Inventário",
-  User = "Usuários",
-  Test = "Test",
-  Login = "Login",
-}
 
 export default function Router() {
   return (

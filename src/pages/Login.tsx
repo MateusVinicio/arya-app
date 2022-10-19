@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useState } from "react";
-import { ScreenNames } from "../Router";
+import { ScreenNames } from "../services/screenNames";
 import api from "../services/api";
 
 interface LoginProps {
