@@ -4,7 +4,7 @@ import { ScrollView } from "react-native";
 
 import api from "../services/api";
 
-interface TestProps {
+interface InventaryProps {
   navigation: any;
 }
 
@@ -39,7 +39,7 @@ const initialInventary: InventaryData = {
   status: false,
 };
 
-export default function Inventary({ navigation }: TestProps) {
+export default function Inventary({ navigation }: InventaryProps) {
   const [inventary, setInventary] = useState<InventaryData>(initialInventary);
 
   const getInventary = () => {
