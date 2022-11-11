@@ -3,6 +3,5 @@ export enum ScreenNames {
   Dashboard = "Dashboard",
   Inventary = "Inventário",
   User = "Usuários",
-  Test = "Test",
   Login = "Login",
 }

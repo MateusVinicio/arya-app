@@ -19,10 +19,6 @@ export default function Home({ navigation }: HomeProps) {
     navigation.navigate(ScreenNames.User);
   };
 
-  const handleTest = () => {
-    navigation.navigate(ScreenNames.Test);
-  };
-
   const handleLogin = () => {
     navigation.navigate(ScreenNames.Login);
   };
@@ -35,7 +31,6 @@ export default function Home({ navigation }: HomeProps) {
       <Button title="Dashboard" onPress={handleDashboard} />
       <Button title="Inventário" onPress={handleInventary} />
       <Button title="Usuários" onPress={handleUser} />
-      <Button title="Test" onPress={handleTest} />
     </View>
   );
 }
