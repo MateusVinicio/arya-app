@@ -5,7 +5,6 @@ import Dashboard from "./pages/Dashboard";
 import Inventary from "./pages/Inventary";
 import User from "./pages/User";
 import Home from "./pages/Home";
-import Test from "./pages/Test";
 import Login from "./pages/Login";
 import { ScreenNames } from "./services/screenNames";
 
@@ -80,21 +79,6 @@ export default function Router() {
           component={User}
           options={{
             title: ScreenNames.User,
-            headerTitleAlign: "center",
-            headerStyle: {
-              backgroundColor: "#1e2022",
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-            },
-          }}
-        />
-        <Stack.Screen
-          name={ScreenNames.Test}
-          component={Test}
-          options={{
-            title: ScreenNames.Test,
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#1e2022",

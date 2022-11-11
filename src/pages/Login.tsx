@@ -8,6 +8,7 @@ import {
 import React, { useState } from "react";
 import { ScreenNames } from "../services/screenNames";
 import api from "../services/api";
+import LoginHelper from "../helpers/LoginHelper";
 
 interface LoginProps {
   navigation: any;
@@ -24,13 +25,20 @@ export default function Login({ navigation }: LoginProps) {
 
   const loginPost = () => {
     setError("");
-    api
+    api.instanceLogin
       .post("auth", {
         email: email,
         password: password,
       })
       .then(({ data }) => {
-        if (data.status) return handleHome();
+        if (data.status) {
+          LoginHelper.storeData(data);
+          LoginHelper.getData().then(function (data) {
+            if (data.token) return handleHome();
+          });
+          return;
+        }
+
         return setError("Ops, algo errado aconteceu");
       })
       .catch(({ response }) => {
