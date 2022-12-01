@@ -1,25 +1,32 @@
 import { View, Text, StyleSheet } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { VictoryPie, VictoryChart, VictoryTheme } from "victory-native";
-import { Dimensions } from "react-native";
+// import { Dimensions } from "react-native";
+
+// Replace by API data
+import dashDataMock from "../../services/dashData.json";
+import { GraphDataProps, simsByProviderToData } from "../helpers/GraphHelper";
 
 interface DashboardProps {
   navigation: any;
 }
 
-const windowWidth = Dimensions.get("window").width;
-
-const data = [
-  { x: "Cats", y: 35 },
-  { x: "Dogs", y: 40 },
-  { x: "Birds", y: 55 },
-];
+// const windowWidth = Dimensions.get("window").width;
 
 export default function Inventary({ navigation }: DashboardProps) {
+  const [graphData, setGraphData] = useState<Array<GraphDataProps>>([]);
+
+  useEffect(() => {
+    // fetch dashData from API...
+    setGraphData(simsByProviderToData(dashDataMock.data.simsByProvider));
+  }, []);
+
+  if (graphData.length == 0) return <Text>Loading...</Text>;
+
   return (
     <View style={styles.container}>
       <Text>Dash</Text>
-      <VictoryPie data={data} />
+      <VictoryPie data={graphData} />
     </View>
   );
 }
