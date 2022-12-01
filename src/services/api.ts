@@ -12,7 +12,7 @@ const instanceHeaders = axios.create({
 instanceHeaders.interceptors.request.use(
   async (config) => {
     const data = await LoginHelper.getData();
-    if (data.token) {
+    if (data?.token) {
       config.headers = config.headers ?? {};
       config.headers.Authorization = `Bearer ${data.token}`;
     }
