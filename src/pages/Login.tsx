@@ -34,7 +34,11 @@ export default function Login({ navigation }: LoginProps) {
         if (data.status) {
           LoginHelper.storeData(data);
           LoginHelper.getData().then(function (data) {
-            if (data?.token) return handleHome();
+            if (data?.token) {
+              api.instanceLogin.defaults.headers.common["Authorization"] =
+                "Bearer " + data?.token;
+              return handleHome();
+            }
           });
           return;
         }
