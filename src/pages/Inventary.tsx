@@ -43,7 +43,7 @@ export default function Inventary({ navigation }: InventaryProps) {
   const [inventary, setInventary] = useState<InventaryData>(initialInventary);
 
   const getInventary = () => {
-    api.instanceLogin
+    api.instance
       .post("customer/inventary")
       .then(({ data }) => {
         setInventary(data);
