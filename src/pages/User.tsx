@@ -46,7 +46,7 @@ export default function User({ navigation }: TestProps) {
   const [userData, setUserData] = useState<UserData>(initialUser);
 
   useEffect(() => {
-    api.instanceHeaders
+    api.instance
       .post("user/datatable")
       .then(({ data }) => {
         setUserData(data);
