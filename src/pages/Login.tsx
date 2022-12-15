@@ -25,7 +25,7 @@ export default function Login({ navigation }: LoginProps) {
 
   const loginPost = () => {
     setError("");
-    api.instanceLogin
+    api.instance
       .post("auth", {
         email: email,
         password: password,
@@ -35,7 +35,7 @@ export default function Login({ navigation }: LoginProps) {
           LoginHelper.storeData(data);
           LoginHelper.getData().then(function (data) {
             if (data?.token) {
-              api.instanceLogin.defaults.headers.common["Authorization"] =
+              api.instance.defaults.headers.common["Authorization"] =
                 "Bearer " + data?.token;
               return handleHome();
             }
